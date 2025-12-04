@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piramal Finance | Home Loans, Calculators, About Us & Contact</title>
+    <link rel="canonical" href="https://www.piramalfinance.com">
+    <meta name="description" content="Piramal Finance offers home loans up to ₹2 Cr, financial calculators, company information, and contact details. Apply online today for competitive rates.">
+    <meta property="og:title" content="Piramal Finance | Home Loans, Calculators, About Us & Contact">
+    <meta property="og:description" content="Piramal Finance offers home loans up to ₹2 Cr, financial calculators, company information, and contact details. Apply online today for competitive rates.">
+    <meta property="og:url" content="https://www.piramalfinance.com">
+    <meta property="og:image" content="https://www.piramalfinance.com/media_1a6c3f058a846b347e09498ba3831514d3e86c469.svg?width=1200&format=pjpg&optimize=medium">
+    <meta property="og:image:alt" content="Piramal Finance Services">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Piramal Finance | Home Loans, Calculators, About Us & Contact">
+    <meta name="twitter:description" content="Piramal Finance offers home loans up to ₹2 Cr, financial calculators, company information, and contact details. Apply online today for competitive rates.">
+    <meta name="twitter:image" content="https://www.piramalfinance.com/media_1a6c3f058a846b347e09498ba3831514d3e86c469.svg?width=1200&format=pjpg&optimize=medium">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #ff6b00;
+            --dark-color: #333;
+            --light-color: #f8f9fa;
+            --gray-color: #6c757d;
+            --border-color: #dee2e6;
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        ul, ol {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .page-container {
+            padding: 2rem 0;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+            padding-top: 80px; /* Offset for fixed header */
+            margin-top: -80px; /* Offset for fixed header */
+        }
+
+        .section-metadata {
+            display: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            margin-right: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-menu li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--secondary-color);
+        }
+
+        .nav-menu a.active {
+            color: var(--secondary-color);
+        }
+
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--secondary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .whatsapp-button {
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+            background-color: #128C7E;
+        }
+
+        .whatsapp-button:active {
+            transform: scale(0.95);
+        }
+
+        .whatsapp-icon {
+            width: 32px;
+            height: 32px;
+            fill: white;
+            filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+        }
+
+        .whatsapp-tooltip {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Banner Section */
+        .banner {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+
+        .banner-slides {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .banner-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .banner-slide.active {
+            opacity: 1;
+        }
+
+        .banner-slide-1 {
+            background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+        }
+
+        .banner-slide-2 {
+            background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+        }
+
+        .banner-slide-3 {
+            background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+        }
+
+        .banner-content {
+            color: white;
+            max-width: 600px;
+            padding: 0 2rem;
+        }
+
+        .banner-content h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .banner-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .banner-indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .banner-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .banner-indicator.active {
+            background-color: white;
+            transform: scale(1.2);
+        }
+
+        .banner-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .banner-nav:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .banner-prev {
+            left: 20px;
+        }
+
+        .banner-next {
+            right: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #003d82);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #e05a00;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Calculator Section */
+        .calculator-section {
+            background-color: var(--light-color);
+            padding: 3rem 0;
+        }
+
+        .calculator-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .calculator-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+        }
+
+        .calculator-result {
+            background-color: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .result-value {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background-color: var(--light-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        /* Eligibility Section */
+        .eligibility-section {
+            background-color: var(--light-color);
+            padding: 3rem 0;
+        }
+
+        .eligibility-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .eligibility-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Tables */
+        .table-container {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--light-color);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        /* Products Section */
+        .products-section {
+            padding: 3rem 0;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image {
+            height: 200px;
+            background-color: var(--light-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+
+        .product-content {
+            padding: 1.5rem;
+        }
+
+        .product-features {
+            margin-top: 1rem;
+        }
+
+        .product-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-feature-icon {
+            margin-right: 0.5rem;
+            color: var(--secondary-color);
+        }
+
+        /* About Us Section */
+        .about-section {
+            padding: 3rem 0;
+            background-color: var(--light-color);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            position: relative;
+            height: 400px;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 86, 179, 0.8));
+            padding: 2rem;
+            color: white;
+            display: flex;
+            align-items: flex-end;
+            height: 50%;
+        }
+
+        .overlay-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 3rem 0;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info {
+            padding: 2rem;
+            background-color: var(--light-color);
+            border-radius: var(--border-radius);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .contact-form {
+            padding: 2rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 3rem 0;
+            background-color: var(--light-color);
+        }
+
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            background-color: white;
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .accordion-header:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        .accordion-content {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .accordion-item.active .accordion-content {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 1000px;
+        }
+
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            padding: 3rem 0;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--light-color);
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .testimonial-info h4 {
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-info p {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: #ccc;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .calculator-container, .eligibility-content, .about-content, .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .banner {
+                height: 400px;
+            }
+
+            .banner-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: -15px;
+                width: 100%;
+                background-color: var(--primary-color);
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .nav-menu li {
+                margin: 0;
+                text-align: center;
+                padding: 0.75rem 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 3rem 0;
+            }
+            
+            .page-container {
+                padding: 1.5rem 0;
+            }
+            
+            .section {
+                margin-bottom: 2rem;
+            }
+
+            .banner {
+                height: 350px;
+            }
+
+            .banner-content h1 {
+                font-size: 2rem;
+            }
+
+            .banner-content p {
+                font-size: 1rem;
+            }
+
+            .banner-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+
+            .banner-prev {
+                left: 10px;
+            }
+
+            .banner-next {
+                right: 10px;
+            }
+
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-button {
+                width: 55px;
+                height: 55px;
+            }
+
+            .whatsapp-icon {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 0.75rem;
+            }
+            
+            .feature-card, .product-card, .testimonial-card {
+                padding: 1.5rem;
+            }
+            
+            .calculator-form, .calculator-result {
+                padding: 1.5rem;
+            }
+
+            .banner {
+                height: 300px;
+            }
+
+            .banner-content {
+                padding: 0 1rem;
+            }
+
+            .banner-content h1 {
+                font-size: 1.75rem;
+            }
+            
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 300px;
+            }
+
+            .overlay-text {
+                font-size: 1.2rem;
+                padding: 0.5rem;
+            }
+
+            .whatsapp-button {
+                width: 50px;
+                height: 50px;
+            }
+
+            .whatsapp-icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span style="color: white;">Piramal Finance</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#home-loan">Home Loan</a></li>
+                <li><a href="#calculators">Calculators</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner" id="home">
+        <div class="banner-slides">
+            <div class="banner-slide banner-slide-1 active">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>Your Dream Home Awaits</h1>
+                        <p>Get home loans up to ₹2 Crore with competitive interest rates and flexible repayment options. Make your homeownership dreams come true with Piramal Finance.</p>
+                        <a href="#home-loan" class="cta-button">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-slide banner-slide-2">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>Lowest Interest Rates</h1>
+                        <p>Starting at just 9.5% p.a., our home loans are designed to make your dream home affordable. Quick approvals with minimal documentation.</p>
+                        <a href="#calculators" class="cta-button">Check Eligibility</a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-slide banner-slide-3">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>Flexible Repayment Options</h1>
+                        <p>Choose from tenure options up to 30 years and repayment plans that suit your financial situation. We're here to support your journey.</p>
+                        <a href="#calculators" class="cta-button">Calculate EMI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="banner-nav banner-prev">❮</button>
+        <button class="banner-nav banner-next">❯</button>
+        <div class="banner-indicators">
+            <div class="banner-indicator active" data-slide="0"></div>
+            <div class="banner-indicator" data-slide="1"></div>
+            <div class="banner-indicator" data-slide="2"></div>
+        </div>
+    </section>
+
+    <!-- Home Loan Section -->
+    <section class="section" id="home-loan">
+        <div class="hero">
+            <div class="container">
+                <h1>Home Loan</h1>
+                <p>Piramal Finance offers home loans up to Rs. 2 Crore* with competitive interest rates starting at 9.5%** per year. Enjoy a simple application process with quick approval and minimal paperwork. We also offer doorstep services for your convenience. With affordable EMIs designed to suit your budget, finding the right home loan is easier than ever. Start your journey to homeownership with confidence. Trust Piramal Finance for a smooth and customer-friendly experience.</p>
+                <a href="#contact" class="cta-button">Apply Now</a>
+            </div>
+        </div>
+
+        <!-- Calculator Section -->
+        <div class="calculator-section">
+            <div class="container">
+                <h2 class="section-title">Calculate Your Home Loan EMI and Eligibility</h2>
+                <div class="calculator-container">
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label for="loanAmount">Loan Amount (₹)</label>
+                            <input type="range" id="loanAmount" class="form-control" min="500000" max="20000000" step="100000" value="5000000">
+                            <div id="loanAmountValue">₹ 50,00,000</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="interestRate">Interest Rate (%)</label>
+                            <input type="range" id="interestRate" class="form-control" min="8" max="15" step="0.1" value="9.5">
+                            <div id="interestRateValue">9.5%</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="loanTenure">Loan Tenure (Years)</label>
+                            <input type="range" id="loanTenure" class="form-control" min="1" max="30" step="1" value="20">
+                            <div id="loanTenureValue">20 Years</div>
+                        </div>
+                    </div>
+                    <div class="calculator-result">
+                        <h3>Your EMI Calculation</h3>
+                        <div class="result-item">
+                            <span>Monthly EMI:</span>
+                            <span class="result-value" id="emiValue">₹ 46,607</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Total Interest:</span>
+                            <span class="result-value" id="totalInterest">₹ 61,85,680</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Total Payment:</span>
+                            <span class="result-value" id="totalPayment">₹ 1,11,85,680</span>
+                        </div>
+                        <a href="#contact" class="cta-button" style="margin-top: 1.5rem;">Check Eligibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Features Section -->
+        <div class="features-section page-container">
+            <div class="container">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Loan Amount</h3>
+                        <p>₹ <strong>5 Lakhs</strong> - ₹ <strong>2 Crore</strong></p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📅</div>
+                        <h3>Loan Tenure</h3>
+                        <p>Up to <strong>30</strong> years</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Interest Rates</h3>
+                        <p>Starting at <strong>9.5%</strong> p.a</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Quick Approval</h3>
+                        <p>Fast processing with minimal documentation</p>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 2rem;"><a href="#">Click for detailed fees & charges</a> *Terms & Conditions apply.</p>
+            </div>
+        </div>
+
+        <!-- Eligibility Section -->
+        <div class="eligibility-section page-container">
+            <div class="container">
+                <h2 class="section-title">Home Loan Eligibility Criteria</h2>
+                <div class="eligibility-content">
+                    <div>
+                        <p>Before applying for a Home Loan, it is important to understand the key factors that affect your eligibility. Our simple guide below will help you assess your chances of approval by considering essential criteria like monthly income, credit score, employment status, age, and property value.</p>
+                        <ul class="eligibility-list">
+                            <li><strong>Salaried & Self-Employed</strong></li>
+                            <li><strong>Income:</strong> The monthly salary or income for salaried and self-employed is ₹12,000</li>
+                            <li><strong>Age:</strong> 21 to 70 years for salaried and 23 to 70 years for self-employed</li>
+                            <li><strong>Loan Tenure:</strong> Up to 30 years</li>
+                            <li><strong>Loan Amount:</strong> ₹ 5,00,000 to ₹ 2,00,00,000</li>
+                            <li><strong>Nationality:</strong> Indian</li>
+                        </ul>
+                        <p style="margin-top: 1.5rem;">Let us help you take the next step toward owning your dream home! Use our Home Loan Eligibility Calculator to estimate your loan amount based on your income and financial details.</p>
+                    </div>
+                    <div>
+                        <div class="calculator-form">
+                            <h3>Check Your Eligibility</h3>
+                            <div class="form-group">
+                                <label for="monthlyIncome">Monthly Income (₹)</label>
+                                <input type="number" id="monthlyIncome" class="form-control" placeholder="Enter your monthly income">
+                            </div>
+                            <div class="form-group">
+                                <label for="employmentType">Employment Type</label>
+                                <select id="employmentType" class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="salaried">Salaried</option>
+                                    <option value="self-employed">Self-Employed</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" id="age" class="form-control" placeholder="Enter your age">
+                            </div>
+                            <button id="checkEligibilityBtn" class="cta-button" style="width: 100%;">Check Eligibility</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interest Rates & Charges Section -->
+        <div class="page-container">
+            <div class="container">
+                <h2 class="section-title">Home Loan Interest Rates & Charges</h2>
+                <p>Understanding the interest rates and charges associated with a housing finance is crucial when planning your finances. Below are the details of our competitive <a href="#">home loan interest rates</a><strong>, processing fees, and other applicable charges</strong>.</p>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Features & Fees</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Interest Rates</td>
+                                <td>9.5% onwards</td>
+                            </tr>
+                            <tr>
+                                <td>Loan Amount</td>
+                                <td>₹ 5,00,000 to ₹ 2,00,00,000</td>
+                            </tr>
+                            <tr>
+                                <td>Processing Fees</td>
+                                <td>Up to 5% of loan amount + applicable taxes</td>
+                            </tr>
+                            <tr>
+                                <td>Loan Tenure</td>
+                                <td>Up to 30 years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Section -->
+        <div class="products-section page-container">
+            <div class="container">
+                <h2 class="section-title">Types of Home Loan Products</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">🏗️</div>
+                        <div class="product-content">
+                            <h3>Construction Loan</h3>
+                            <p>With a construction loan from Piramal finance, the perfect home for you is easily within reach...</p>
+                            <div class="product-features">
+                                <div class="product-feature">
+                                    <span class="product-feature-icon">💰</span>
+                                    <span>Loan amount: Up to ₹2 Crore</span>
+                                </div>
+                                <div class="product-feature">
+                                    <span class="product-feature-icon">📅</span>
+                                    <span>Loan tenure: Up to 30 years</span>
+                                </div>
+                                <div class="product-feature">
+                                    <span class="product-feature-icon">📊</span>
+                                    <span>Interest rates: Starting at 9.5%</span>
+                                </div>
+                            </div>
+                            <a href="#contact" class="cta-button" style="display: inline-block; margin-top: 1rem;">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🛠️</div>
+                        <div class="product-content">
+                            <h3>Renovation Loan</h3>
+                            <p>With a Home Renovation Loan, you can keep your hard-earned savings and investments untouched and pay off...</p>
+                            <div class="product-features">
+                                <div class="product-feature">
+                                    <span class="product-feature-icon">💰</span>
+                                    <span>Loan amount: Up to ₹50 Lakh</span>
+                                </div>
+                                <div class="product-feature">
+                                    <span class="product-feature-icon">📅</span>
+                                    <span>Loan tenure: Up to 20 years</span>
+                                </div>
+                                <div class="product-feature">
+                                    <span class="product-feature-icon">📊</span>
+                                    <span>Interest rates: Starting at 10%</span>
+                                </div>
+                            </div>
+                            <a href="#contact" class="cta-button" style="display: inline-block; margin-top: 1rem;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculators Section -->
+    <section class="section" id="calculators">
+        <div class="calculator-section">
+            <div class="container">
+                <h2 class="section-title">Financial Calculators</h2>
+                <p style="text-align: center; margin-bottom: 2rem;">Use our calculators to plan your finances better. Choose from different calculator types below.</p>
+                
+                <div class="calculator-tabs" style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                        <button class="cta-button calculator-tab active" data-calc="emi">EMI Calculator</button>
+                        <button class="cta-button calculator-tab" data-calc="eligibility">Eligibility Calculator</button>
+                        <button class="cta-button calculator-tab" data-calc="affordability">Affordability Calculator</button>
+                    </div>
+                </div>
+                
+                <!-- EMI Calculator (Default) -->
+                <div class="calculator-container active-calc" id="emi-calculator">
+                    <div class="calculator-form">
+                        <h3>EMI Calculator</h3>
+                        <div class="form-group">
+                            <label for="calc-loanAmount">Loan Amount (₹)</label>
+                            <input type="range" id="calc-loanAmount" class="form-control" min="500000" max="20000000" step="100000" value="5000000">
+                            <div id="calc-loanAmountValue">₹ 50,00,000</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="calc-interestRate">Interest Rate (%)</label>
+                            <input type="range" id="calc-interestRate" class="form-control" min="8" max="15" step="0.1" value="9.5">
+                            <div id="calc-interestRateValue">9.5%</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="calc-loanTenure">Loan Tenure (Years)</label>
+                            <input type="range" id="calc-loanTenure" class="form-control" min="1" max="30" step="1" value="20">
+                            <div id="calc-loanTenureValue">20 Years</div>
+                        </div>
+                    </div>
+                    <div class="calculator-result">
+                        <h3>Your EMI Calculation</h3>
+                        <div class="result-item">
+                            <span>Monthly EMI:</span>
+                            <span class="result-value" id="calc-emiValue">₹ 46,607</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Total Interest:</span>
+                            <span class="result-value" id="calc-totalInterest">₹ 61,85,680</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Total Payment:</span>
+                            <span class="result-value" id="calc-totalPayment">₹ 1,11,85,680</span>
+                        </div>
+                        <a href="#contact" class="cta-button" style="margin-top: 1.5rem;">Apply Now</a>
+                    </div>
+                </div>
+                
+                <!-- Eligibility Calculator -->
+                <div class="calculator-container" id="eligibility-calculator" style="display: none;">
+                    <div class="calculator-form">
+                        <h3>Eligibility Calculator</h3>
+                        <div class="form-group">
+                            <label for="eligibility-income">Monthly Income (₹)</label>
+                            <input type="number" id="eligibility-income" class="form-control" placeholder="Enter monthly income" value="75000">
+                        </div>
+                        <div class="form-group">
+                            <label for="eligibility-obligations">Monthly Obligations (₹)</label>
+                            <input type="number" id="eligibility-obligations" class="form-control" placeholder="Enter monthly obligations" value="15000">
+                        </div>
+                        <div class="form-group">
+                            <label for="eligibility-tenure">Preferred Tenure (Years)</label>
+                            <input type="range" id="eligibility-tenure" class="form-control" min="5" max="30" step="1" value="20">
+                            <div id="eligibility-tenureValue">20 Years</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="eligibility-interest">Expected Interest Rate (%)</label>
+                            <input type="range" id="eligibility-interest" class="form-control" min="8" max="15" step="0.1" value="9.5">
+                            <div id="eligibility-interestValue">9.5%</div>
+                        </div>
+                    </div>
+                    <div class="calculator-result">
+                        <h3>Your Eligibility Results</h3>
+                        <div class="result-item">
+                            <span>Maximum Loan Amount:</span>
+                            <span class="result-value" id="eligibility-loanAmount">₹ 45,00,000</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Monthly EMI:</span>
+                            <span class="result-value" id="eligibility-emi">₹ 41,500</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Eligibility Score:</span>
+                            <span class="result-value" id="eligibility-score">High</span>
+                        </div>
+                        <a href="#contact" class="cta-button" style="margin-top: 1.5rem;">Apply Now</a>
+                    </div>
+                </div>
+                
+                <!-- Affordability Calculator -->
+                <div class="calculator-container" id="affordability-calculator" style="display: none;">
+                    <div class="calculator-form">
+                        <h3>Affordability Calculator</h3>
+                        <div class="form-group">
+                            <label for="affordability-income">Monthly Income (₹)</label>
+                            <input type="number" id="affordability-income" class="form-control" placeholder="Enter monthly income" value="100000">
+                        </div>
+                        <div class="form-group">
+                            <label for="affordability-expenses">Monthly Expenses (₹)</label>
+                            <input type="number" id="affordability-expenses" class="form-control" placeholder="Enter monthly expenses" value="40000">
+                        </div>
+                        <div class="form-group">
+                            <label for="affordability-savings">Existing Savings (₹)</label>
+                            <input type="number" id="affordability-savings" class="form-control" placeholder="Enter existing savings" value="500000">
+                        </div>
+                        <div class="form-group">
+                            <label for="affordability-downpayment">Downpayment Percentage (%)</label>
+                            <input type="range" id="affordability-downpayment" class="form-control" min="10" max="50" step="5" value="20">
+                            <div id="affordability-downpaymentValue">20%</div>
+                        </div>
+                    </div>
+                    <div class="calculator-result">
+                        <h3>Your Affordability Results</h3>
+                        <div class="result-item">
+                            <span>Affordable Property Price:</span>
+                            <span class="result-value" id="affordability-price">₹ 75,00,000</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Recommended Loan Amount:</span>
+                            <span class="result-value" id="affordability-loanAmount">₹ 60,00,000</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Downpayment Required:</span>
+                            <span class="result-value" id="affordability-downpaymentRequired">₹ 15,00,000</span>
+                        </div>
+                        <a href="#contact" class="cta-button" style="margin-top: 1.5rem;">Get Pre-Approval</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section" id="about-us">
+        <div class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Piramal Finance</h2>
+                <div class="about-content">
+                    <div>
+                        <h3>Our Mission</h3>
+                        <p>At Piramal Finance, we believe that everyone deserves a place to call home. Our mission is to make homeownership accessible and affordable for individuals and families across India. With decades of experience in the financial sector, we understand the importance of trust, transparency, and customer-centric solutions.</p>
+                        
+                        <h3 style="margin-top: 1.5rem;">Our Values</h3>
+                        <p>We are committed to integrity, innovation, and inclusivity in everything we do. Our team works tirelessly to provide financial solutions that are not just loans, but stepping stones towards building dreams and securing futures.</p>
+                        
+                        <h3 style="margin-top: 1.5rem;">Why Choose Us</h3>
+                        <ul>
+                            <li><strong>Customer-Centric Approach:</strong> We put our customers first in every decision we make.</li>
+                            <li><strong>Transparent Processes:</strong> No hidden charges or surprises in our loan products.</li>
+                            <li><strong>Expert Guidance:</strong> Our financial advisors help you make informed decisions.</li>
+                            <li><strong>Digital Convenience:</strong> Apply, track, and manage your loan from anywhere.</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Piramal Finance Team - Professional Financial Advisors"
+                             loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-text">Building Dreams Since 1988</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">35+</div>
+                        <div>Years of Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">₹5000+ Cr</div>
+                        <div>Home Loans Disbursed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">50,000+</div>
+                        <div>Happy Customers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">150+</div>
+                        <div>Cities Across India</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">98%</div>
+                        <div>Customer Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">24/7</div>
+                        <div>Customer Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <p style="text-align: center; margin-bottom: 2rem;">Get in touch with us for any queries, loan applications, or support. Our team is ready to assist you.</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Corporate Office</h4>
+                                <p>Piramal Finance Ltd.<br>
+                                Piramal Tower, Peninsula Corporate Park<br>
+                                Lower Parel, Mumbai - 400013</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>Toll Free: 1800-123-4567<br>
+                                Customer Care: 022-1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>Home Loan Queries: homeloan@piramalfinance.com<br>
+                                General Support: support@piramalfinance.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Monday to Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 2:00 PM<br>
+                                Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address</label>
+                                <input type="email" id="contact-email" class="form-control" placeholder="Enter your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number</label>
+                                <input type="tel" id="contact-phone" class="form-control" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Subject</label>
+                                <select id="contact-subject" class="form-control" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="home-loan">Home Loan Inquiry</option>
+                                    <option value="eligibility">Eligibility Check</option>
+                                    <option value="existing-loan">Existing Loan Query</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section page-container">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What is a Home Loan?</span>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>A home loan is a form of financial support that helps you buy, build, or renovate your dream home without paying the full amount upfront. You borrow the required amount and repay it in easy monthly EMIs over a set tenure, along with interest.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>How to Apply for a Home Loan at Piramal Finance?</span>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>You can apply online through our website, visit a branch, or call our customer care. Our team will guide you through the entire process.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What documents are required for a home loan?</span>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Basic documents include identity proof, address proof, income proof, property documents, and bank statements. The exact list depends on your employment type and loan amount.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section page-container">
+        <div class="container">
+            <h2 class="section-title">Our Happy Customers</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">K</div>
+                        <div class="testimonial-info">
+                            <h4>Ketan Babariya</h4>
+                            <p>Branch Manager, SVCL, Rajkot</p>
+                        </div>
+                    </div>
+                    <h3>Home loan made easy with Piramal Finance.</h3>
+                    <p>I am Ketan Babariya, Branch Manager, SVCL, Rajkot. Piramal Finance stands out. The team heard me. They shared clear steps. The plan fit my need. Rates and fees were clear from day one. No hidden costs. Paperwork was light. Calls were quick. The money came on time.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">A</div>
+                        <div class="testimonial-info">
+                            <h4>Arvind Jathav</h4>
+                            <p>Automobile manufacturer, Indore</p>
+                        </div>
+                    </div>
+                    <h3>Home loan in Indore, done right.</h3>
+                    <p>I am Arvind Jathav. I run an automobile unit in Indore. I needed a home loan. Piramal Finance made it simple. The team listened. They used clear words. They told me each step. Sanction was quick. Disbursal was on time. Rates and fees were clear.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Piramal Finance</h3>
+                    <p>Making home ownership dreams come true with flexible and affordable home loan solutions.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#home-loan">Home Loan</a></li>
+                        <li><a href="#calculators">Calculators</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home-loan">Home Purchase Loan</a></li>
+                        <li><a href="#home-loan">Home Construction Loan</a></li>
+                        <li><a href="#home-loan">Home Renovation Loan</a></li>
+                        <li><a href="#home-loan">Home Extension Loan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>📞 1800-123-4567</li>
+                        <li>✉️ info@piramalfinance.com</li>
+                        <li>📍 Corporate Office: Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Piramal Finance. All rights reserved. | <a href="#" style="color: #aaa;">Privacy Policy</a> | <a href="#" style="color: #aaa;">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button with direct link -->
+    <div class="whatsapp-float">
+        <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+        <a href="https://wa.me/919031209738?text=Hi, I'm interested in a home loan from Piramal Finance. Can you please provide more information?" 
+           class="whatsapp-button" 
+           id="whatsappButton">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.507 14.307l-.009.075c-.264 1.152-1.304 2.143-2.319 2.469-.187.059-.396.09-.601.09-.622 0-1.256-.204-1.863-.554-.377-.219-.872-.496-1.56-.803-1.451-.65-2.5-1.108-3.268-1.794-1.09-1.003-1.919-2.375-2.034-3.893-.043-.586.097-1.245.389-1.816.202-.398.593-.744 1.004-.744h.734c.322 0 .643.156.902.435l1.25 1.371c.178.195.389.407.632.561.165.106.338.178.504.178.359 0 .642-.306.642-.668v-2.122c0-.416-.219-.764-.526-.764h-.927c-.265 0-.51.136-.638.361-.514.888-1.299 2.071-1.808 2.836-.238.362-.177.816.147 1.083.55.457 1.202.996 2.026 1.496.197.119.472.226.721.226.463 0 .95-.319 1.484-.896l.086-.095c.229-.255.596-.503.889-.503h1.406c.416 0 .748.348.748.764v1.406c0 .416-.348.764-.764.764zM12 2.001c-5.522 0-10 4.478-10 10 0 1.737.444 3.374 1.229 4.792L2 22l5.233-1.237c1.359.751 2.892 1.238 4.767 1.238 5.522 0 10-4.478 10-10 0-5.522-4.478-10-10-10z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+
+        // Navigation Active State
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        const sections = document.querySelectorAll('.section');
+        
+        function setActiveNavLink() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', setActiveNavLink);
+        
+        // Close mobile menu when clicking a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+
+        // Accordion Functionality
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+            
+            header.addEventListener('click', () => {
+                // Close all other items
+                accordionItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // EMI Calculator Functionality
+        function setupEMICalculator(loanSlider, interestSlider, tenureSlider, loanValue, interestValue, tenureValue, emiDisplay, interestDisplay, totalDisplay) {
+            function formatCurrency(amount) {
+                return new Intl.NumberFormat('en-IN', {
+                    style: 'currency',
+                    currency: 'INR',
+                    maximumFractionDigits: 0
+                }).format(amount);
+            }
+            
+            function calculateEMI() {
+                const principal = parseFloat(loanSlider.value);
+                const rate = parseFloat(interestSlider.value) / 12 / 100;
+                const tenure = parseFloat(tenureSlider.value) * 12;
+                
+                // EMI formula: P * r * (1+r)^n / ((1+r)^n - 1)
+                const emi = principal * rate * Math.pow(1 + rate, tenure) / (Math.pow(1 + rate, tenure) - 1);
+                const total = emi * tenure;
+                const interest = total - principal;
+                
+                emiDisplay.textContent = formatCurrency(emi);
+                interestDisplay.textContent = formatCurrency(interest);
+                totalDisplay.textContent = formatCurrency(total);
+            }
+            
+            function updateSliderValues() {
+                loanValue.textContent = formatCurrency(loanSlider.value);
+                interestValue.textContent = `${interestSlider.value}%`;
+                tenureValue.textContent = `${tenureSlider.value} Years`;
+                calculateEMI();
+            }
+            
+            loanSlider.addEventListener('input', updateSliderValues);
+            interestSlider.addEventListener('input', updateSliderValues);
+            tenureSlider.addEventListener('input', updateSliderValues);
+            
+            // Initialize calculator
+            updateSliderValues();
+        }
+
+        // Home Loan EMI Calculator
+        setupEMICalculator(
+            document.getElementById('loanAmount'),
+            document.getElementById('interestRate'),
+            document.getElementById('loanTenure'),
+            document.getElementById('loanAmountValue'),
+            document.getElementById('interestRateValue'),
+            document.getElementById('loanTenureValue'),
+            document.getElementById('emiValue'),
+            document.getElementById('totalInterest'),
+            document.getElementById('totalPayment')
+        );
+
+        // Calculators Section EMI Calculator
+        setupEMICalculator(
+            document.getElementById('calc-loanAmount'),
+            document.getElementById('calc-interestRate'),
+            document.getElementById('calc-loanTenure'),
+            document.getElementById('calc-loanAmountValue'),
+            document.getElementById('calc-interestRateValue'),
+            document.getElementById('calc-loanTenureValue'),
+            document.getElementById('calc-emiValue'),
+            document.getElementById('calc-totalInterest'),
+            document.getElementById('calc-totalPayment')
+        );
+
+        // Eligibility Calculator Setup
+        function setupEligibilityCalculator() {
+            const incomeInput = document.getElementById('eligibility-income');
+            const obligationsInput = document.getElementById('eligibility-obligations');
+            const tenureSlider = document.getElementById('eligibility-tenure');
+            const interestSlider = document.getElementById('eligibility-interest');
+            const tenureValue = document.getElementById('eligibility-tenureValue');
+            const interestValue = document.getElementById('eligibility-interestValue');
+            const loanAmountDisplay = document.getElementById('eligibility-loanAmount');
+            const emiDisplay = document.getElementById('eligibility-emi');
+            const scoreDisplay = document.getElementById('eligibility-score');
+            
+            function formatCurrency(amount) {
+                return new Intl.NumberFormat('en-IN', {
+                    style: 'currency',
+                    currency: 'INR',
+                    maximumFractionDigits: 0
+                }).format(amount);
+            }
+            
+            function calculateEligibility() {
+                const income = parseFloat(incomeInput.value) || 0;
+                const obligations = parseFloat(obligationsInput.value) || 0;
+                const tenure = parseFloat(tenureSlider.value);
+                const interestRate = parseFloat(interestSlider.value) / 12 / 100;
+                const tenureMonths = tenure * 12;
+                
+                // Simple eligibility calculation (50% of net income for EMI)
+                const netIncome = income - obligations;
+                const maxEMI = netIncome * 0.5;
+                
+                // Calculate loan amount based on max EMI
+                const loanAmount = maxEMI * (Math.pow(1 + interestRate, tenureMonths) - 1) / (interestRate * Math.pow(1 + interestRate, tenureMonths));
+                
+                // Calculate actual EMI for display
+                const actualEMI = loanAmount * interestRate * Math.pow(1 + interestRate, tenureMonths) / (Math.pow(1 + interestRate, tenureMonths) - 1);
+                
+                // Determine eligibility score
+                let score = 'Low';
+                if (loanAmount > 5000000) score = 'High';
+                else if (loanAmount > 2000000) score = 'Medium';
+                
+                loanAmountDisplay.textContent = formatCurrency(loanAmount);
+                emiDisplay.textContent = formatCurrency(actualEMI);
+                scoreDisplay.textContent = score;
+            }
+            
+            function updateSliderValues() {
+                tenureValue.textContent = `${tenureSlider.value} Years`;
+                interestValue.textContent = `${interestSlider.value}%`;
+                calculateEligibility();
+            }
+            
+            incomeInput.addEventListener('input', calculateEligibility);
+            obligationsInput.addEventListener('input', calculateEligibility);
+            tenureSlider.addEventListener('input', updateSliderValues);
+            interestSlider.addEventListener('input', updateSliderValues);
+            
+            // Initialize calculator
+            updateSliderValues();
+        }
+        
+        // Affordability Calculator Setup
+        function setupAffordabilityCalculator() {
+            const incomeInput = document.getElementById('affordability-income');
+            const expensesInput = document.getElementById('affordability-expenses');
+            const savingsInput = document.getElementById('affordability-savings');
+            const downpaymentSlider = document.getElementById('affordability-downpayment');
+            const downpaymentValue = document.getElementById('affordability-downpaymentValue');
+            const priceDisplay = document.getElementById('affordability-price');
+            const loanAmountDisplay = document.getElementById('affordability-loanAmount');
+            const downpaymentRequiredDisplay = document.getElementById('affordability-downpaymentRequired');
+            
+            function formatCurrency(amount) {
+                return new Intl.NumberFormat('en-IN', {
+                    style: 'currency',
+                    currency: 'INR',
+                    maximumFractionDigits: 0
+                }).format(amount);
+            }
+            
+            function calculateAffordability() {
+                const income = parseFloat(incomeInput.value) || 0;
+                const expenses = parseFloat(expensesInput.value) || 0;
+                const savings = parseFloat(savingsInput.value) || 0;
+                const downpaymentPercent = parseFloat(downpaymentSlider.value);
+                
+                // Simple affordability calculation (40% of net income for EMI)
+                const netIncome = income - expenses;
+                const maxAnnualEMI = netIncome * 12 * 0.4;
+                const maxLoanAmount = maxAnnualEMI * 5; // Simplified calculation
+                
+                // Calculate property price based on downpayment percentage
+                const downpaymentDecimal = downpaymentPercent / 100;
+                const propertyPrice = Math.min(maxLoanAmount / (1 - downpaymentDecimal), savings / downpaymentDecimal * 1.5);
+                const downpaymentRequired = propertyPrice * downpaymentDecimal;
+                const loanAmount = propertyPrice - downpaymentRequired;
+                
+                priceDisplay.textContent = formatCurrency(propertyPrice);
+                loanAmountDisplay.textContent = formatCurrency(loanAmount);
+                downpaymentRequiredDisplay.textContent = formatCurrency(downpaymentRequired);
+            }
+            
+            function updateSliderValues() {
+                downpaymentValue.textContent = `${downpaymentSlider.value}%`;
+                calculateAffordability();
+            }
+            
+            incomeInput.addEventListener('input', calculateAffordability);
+            expensesInput.addEventListener('input', calculateAffordability);
+            savingsInput.addEventListener('input', calculateAffordability);
+            downpaymentSlider.addEventListener('input', updateSliderValues);
+            
+            // Initialize calculator
+            updateSliderValues();
+        }
+
+        // Setup calculator tabs
+        const calculatorTabs = document.querySelectorAll('.calculator-tab');
+        const calculatorSections = {
+            'emi': document.getElementById('emi-calculator'),
+            'eligibility': document.getElementById('eligibility-calculator'),
+            'affordability': document.getElementById('affordability-calculator')
+        };
+        
+        calculatorTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                calculatorTabs.forEach(t => t.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Hide all calculator sections
+                Object.values(calculatorSections).forEach(section => {
+                    section.style.display = 'none';
+                });
+                
+                // Show selected calculator section
+                const calculatorType = tab.getAttribute('data-calc');
+                calculatorSections[calculatorType].style.display = 'grid';
+                
+                // Initialize the calculator if needed
+                if (calculatorType === 'eligibility') {
+                    setupEligibilityCalculator();
+                } else if (calculatorType === 'affordability') {
+                    setupAffordabilityCalculator();
+                }
+            });
+        });
+
+        // Initialize eligibility and affordability calculators
+        setupEligibilityCalculator();
+        setupAffordabilityCalculator();
+
+        // Home Loan Eligibility Check Button
+        document.getElementById('checkEligibilityBtn').addEventListener('click', function() {
+            const monthlyIncome = document.getElementById('monthlyIncome').value;
+            const employmentType = document.getElementById('employmentType').value;
+            const age = document.getElementById('age').value;
+            
+            if (!monthlyIncome || !employmentType || !age) {
+                alert('Please fill in all fields to check eligibility.');
+                return;
+            }
+            
+            // Simple eligibility check
+            let eligible = false;
+            let maxLoan = 0;
+            
+            if (parseInt(age) >= 21 && parseInt(age) <= 70) {
+                if (parseInt(monthlyIncome) >= 12000) {
+                    eligible = true;
+                    maxLoan = parseInt(monthlyIncome) * 60; // 60 times monthly income
+                    
+                    if (maxLoan > 20000000) maxLoan = 20000000;
+                    if (maxLoan < 500000) maxLoan = 500000;
+                }
+            }
+            
+            if (eligible) {
+                alert(`You are eligible for a home loan up to ₹${maxLoan.toLocaleString('en-IN')}. Our representative will contact you soon.`);
+                // Scroll to contact section
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                alert('Based on the information provided, you may not be eligible for a home loan at this time. Please contact our customer care for more details.');
+            }
+        });
+
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('contact-name').value;
+            const email = document.getElementById('contact-email').value;
+            const phone = document.getElementById('contact-phone').value;
+            const subject = document.getElementById('contact-subject').value;
+            const message = document.getElementById('contact-message').value;
+            
+            // Simple validation
+            if (!name || !email || !phone || !subject || !message) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            
+            // In a real application, you would send this data to a server
+            // For this demo, we'll just show a success message
+            alert(`Thank you ${name}! Your message has been submitted. Our team will contact you at ${phone} or ${email} within 24 hours.`);
+            
+            // Reset form
+            document.getElementById('contactForm').reset();
+        });
+
+        // Banner Slider Functionality
+        const bannerSlides = document.querySelectorAll('.banner-slide');
+        const bannerIndicators = document.querySelectorAll('.banner-indicator');
+        const prevButton = document.querySelector('.banner-prev');
+        const nextButton = document.querySelector('.banner-next');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            // Hide all slides
+            bannerSlides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            // Remove active class from all indicators
+            bannerIndicators.forEach(indicator => {
+                indicator.classList.remove('active');
+            });
+            
+            // Show the selected slide
+            bannerSlides[index].classList.add('active');
+            bannerIndicators[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let nextIndex = (currentSlide + 1) % bannerSlides.length;
+            showSlide(nextIndex);
+        }
+
+        function prevSlide() {
+            let prevIndex = (currentSlide - 1 + bannerSlides.length) % bannerSlides.length;
+            showSlide(prevIndex);
+        }
+
+        function startSlideShow() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopSlideShow() {
+            clearInterval(slideInterval);
+        }
+
+        // Event listeners for banner navigation
+        nextButton.addEventListener('click', () => {
+            stopSlideShow();
+            nextSlide();
+            startSlideShow();
+        });
+
+        prevButton.addEventListener('click', () => {
+            stopSlideShow();
+            prevSlide();
+            startSlideShow();
+        });
+
+        // Event listeners for banner indicators
+        bannerIndicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                stopSlideShow();
+                showSlide(index);
+                startSlideShow();
+            });
+        });
+
+        // Pause slideshow when hovering over banner
+        const banner = document.querySelector('.banner');
+        banner.addEventListener('mouseenter', stopSlideShow);
+        banner.addEventListener('mouseleave', startSlideShow);
+
+        // Initialize banner slideshow
+        startSlideShow();
+    </script>
+</body>
+</html>
